@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       float mousePosWorldUnitX = ((Input.mousePosition.x) / Screen.width * 16) - 8;
+        float mousePosWorldUnitX = ((Input.mousePosition.x) / Screen.width * 16) - 8;
 
         Vector2 platformPos = new Vector2(0, transform.position.y);
 
