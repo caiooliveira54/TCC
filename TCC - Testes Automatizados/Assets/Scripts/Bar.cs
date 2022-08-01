@@ -2,23 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bar : MonoBehaviour
+public class Bar : MonoBehaviour, Observable
 {
     [SerializeField]
     private int lifePoints;
     [SerializeField]
-    private int barScore;
-    
+    private int barPoints;
+    [SerializeField]
+    private Score score;
+
+    List<Observer> observers;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        observers = new List<Observer>();
+
+        score = GameObject.FindObjectOfType<Score>().GetComponent<Score>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnDisable() {
+        score.AddPoints(barPoints);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -29,18 +33,31 @@ public class Bar : MonoBehaviour
 
             if (lifePoints <= 0)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
-    
+
+    public void RegisterObserver(Observer obs)
+    {
+        observers.Add(obs);
+    }
+
+    public void Notify(object observable)
+    {
+        foreach(var observer in observers)
+        {
+            observer.update(this);
+        }
+    }
+
     public int GetLifePoints()
     {
         return lifePoints;
     }
 
-    public int GetBarScore()
+    public int GetBarPoints()
     {
-        return barScore;
+        return barPoints;
     }
 }

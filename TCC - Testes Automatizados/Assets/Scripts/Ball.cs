@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
 
     public float speed;
+    public bool start;
 
     private Rigidbody2D rb;
     private Vector3 platformDistBall;
@@ -14,13 +15,39 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = Vector2.up * speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (start == false)
+        {
+            HorizontalMove();
+            
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                start = true;
+                BallMove();
+            }
+        }
+
+    }
+
+    private void BallMove()
+    {
+        rb.velocity = Vector2.up * speed;
+    }
+
+    private void HorizontalMove()
+    {
+        float mousePosWorldUnitX = ((Input.mousePosition.x) / Screen.width * 16) - 8;
+
+        Vector2 platformPos = new Vector2(0, transform.position.y);
+
+        platformPos.x = Mathf.Clamp(mousePosWorldUnitX, -7.4f, 7.4f);
+
+        transform.position = platformPos; 
+
     }
 
     private float HitFactor(Vector2 ball, Vector2 player, float playerWidth)
