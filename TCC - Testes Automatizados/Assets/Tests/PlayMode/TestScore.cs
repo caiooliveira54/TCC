@@ -30,11 +30,13 @@ public class TestScore
     public IEnumerator TestScoreWhenDestroyAllBars()
     {
         int num;
-
+        int x = 0;
         foreach (Bar bar in bars)
         {
+            x++;
             if (bar.tag == "Destructable")
             {
+                Debug.Log("Block " + x);
                 if (bar.GetBarPoints() == 10)
                     num = 1;
                 if (bar.GetBarPoints() == 30)

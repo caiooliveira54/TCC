@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public bool AutoPlay { get; set; } = true;
+    public bool AutoPlay { get; set; } = false;
     Ball ball = null;
 
     // Start is called before the first frame update
