@@ -7,6 +7,7 @@ TagManager:
   - Destructable
   - Ball
   - Hole
+  - BallPosition
   layers:
   - Default
   - TransparentFX

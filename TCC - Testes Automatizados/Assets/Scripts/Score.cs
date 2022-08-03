@@ -1,33 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Score : MonoBehaviour, Observer
+public class Score : MonoBehaviour
 {
+    public static Score instance;
+
+    public Text scoreText;
 
     [SerializeField]
     private int score;
-    
-    Observable[] observables;
+
+    private void Awake() {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        observables = GameObject.FindObjectsOfType<Bar>();
-
-        foreach (Observable obs in observables)
-            obs.RegisterObserver(this);
-    }
-
-    public void update(object observable)
-    {
-        Bar bar = (Bar)observable;
-
-        score += bar.GetBarPoints();
+        scoreText.text = "SCORE: " + score.ToString();
     }
 
     public void AddPoints(int points)
     {
         score += points;
+        scoreText.text = "SCORE: " + score.ToString();
+    }
+
+    public int GetPlayerScore()
+    {
+        return score;
     }
 }

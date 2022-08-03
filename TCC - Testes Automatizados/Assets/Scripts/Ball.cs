@@ -7,7 +7,9 @@ public class Ball : MonoBehaviour
 
     public float speed;
     public bool start;
-
+    public int lifes;
+    
+    private Transform ballPos;
     private Rigidbody2D rb;
     private Vector3 platformDistBall;
 
@@ -15,6 +17,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        ballPos = GameObject.FindWithTag("BallPosition").transform;
     }
 
     // Update is called once per frame
@@ -26,16 +29,16 @@ public class Ball : MonoBehaviour
             
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                start = true;
                 BallMove();
             }
         }
 
     }
 
-    private void BallMove()
+    public void BallMove()
     {
         rb.velocity = Vector2.up * speed;
+        start = true;
     }
 
     private void HorizontalMove()
@@ -59,13 +62,27 @@ public class Ball : MonoBehaviour
     {
         if(col.gameObject.CompareTag("Player"))
         {
-            float x = HitFactor(
-            transform.position, 
-            col.transform.position, 
-            col.collider.bounds.size.x);
+            Vector2 velocityAdjustment = new Vector2(Random.Range(0f, 0.2f), Random.Range(0f, 0.2f));
+            rb.velocity += velocityAdjustment;
+        }
+    }
 
-            Vector2 dir = new Vector2(x, 1).normalized;
-            rb.velocity = dir * speed;
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("Hole"))
+        {
+            if (Lifes.instance.GetLifes() > 0)
+            {
+                rb.velocity = Vector2.zero;
+                transform.position = ballPos.position;
+                start = false;
+                Lifes.instance.LoseLife();
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
+            
         }
     }
 }
