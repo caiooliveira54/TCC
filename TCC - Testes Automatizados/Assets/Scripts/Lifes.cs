@@ -8,6 +8,7 @@ public class Lifes : MonoBehaviour
     public static Lifes instance;
 
     public Text lifeText;
+    public GameObject gameOver;
 
     [SerializeField]
     private int lifes;

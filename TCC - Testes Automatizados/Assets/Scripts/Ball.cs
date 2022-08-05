@@ -71,7 +71,7 @@ public class Ball : MonoBehaviour
     {
         if(col.gameObject.CompareTag("Hole"))
         {
-            if (Lifes.instance.GetLifes() > 0)
+            if (Lifes.instance.GetLifes() > 1)
             {
                 rb.velocity = Vector2.zero;
                 transform.position = ballPos.position;
@@ -80,6 +80,8 @@ public class Ball : MonoBehaviour
             }
             else
             {
+                Lifes.instance.LoseLife();
+                Lifes.instance.gameOver.SetActive(true);
                 gameObject.SetActive(false);
             }
             
