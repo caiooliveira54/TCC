@@ -2264,7 +2264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 509606099}
+  victory: {fileID: 0}
   score: 0
+  isTesting: 1
 --- !u!114 &901397673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2278,6 +2280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeText: {fileID: 714833455}
+  gameOver: {fileID: 0}
   lifes: 3
 --- !u!1001 &972682677
 PrefabInstance:

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Test Runner
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 43
+  controlID: 141
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 153
+  controlID: 37
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 723.2
     height: 370.4
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 347.19995
     height: 722.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -307,7 +307,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 183
+    ID: 150
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -330,16 +330,16 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 12}
     m_NewResultList:
-    - id: 1007
+    - id: 1011
       uniqueId: '[TCC - Testes Automatizados][suite]'
       name: TCC - Testes Automatizados
       fullName: TCC - Testes Automatizados
       resultStatus: 1
-      duration: 101.120705
+      duration: 101.13371
       messages: 
       output: 
       stacktrace: 
@@ -350,12 +350,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1010
+    - id: 1014
       uniqueId: '[Tests][C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes Automatizados/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes Automatizados/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 101.00239
+      duration: 100.99217
       messages: 
       output: 
       stacktrace: 
@@ -364,14 +364,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1007
+      parentId: 1011
       parentUniqueId: '[TCC - Testes Automatizados][suite]'
-    - id: 1008
+    - id: 1012
       uniqueId: Tests.dll/[Tests][TestScore][suite]
       name: TestScore
       fullName: TestScore
       resultStatus: 1
-      duration: 100.99416
+      duration: 100.97861
       messages: 
       output: 
       stacktrace: 
@@ -380,14 +380,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1010
+      parentId: 1014
       parentUniqueId: '[Tests][C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes Automatizados/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1009
+    - id: 1013
       uniqueId: Tests.dll/TestScore/[Tests][TestScore.TestScoreWhenDestroyAllBars]
       name: TestScoreWhenDestroyAllBars
       fullName: TestScore.TestScoreWhenDestroyAllBars
       resultStatus: 1
-      duration: 100.98052
+      duration: 100.96534
       messages: 
       output: 'Block 1
 
@@ -417,34 +417,35 @@ MonoBehaviour:
 
         Block 13
 
-        Block 14
-
         Block
-        15
+        14
+
+        Block 15
 
         Block 16
 
         Block 17
 
-        Block 18
+        Block
+        18
 
         Block 19
 
-        Block
-        20
+        Block 20
 
         Block 21
 
-        Block 22
+        Block
+        22
 
         Block 23
 
         Block 24
 
-        Block
-        25
+        Block 25
 
-        Block 26
+        Block
+        26
 
         Block 27
 
@@ -461,34 +462,35 @@ MonoBehaviour:
 
         Block 33
 
-        Block 34
-
         Block
-        35
+        34
+
+        Block 35
 
         Block 36
 
         Block 37
 
-        Block 38
+        Block
+        38
 
         Block 39
 
-        Block
-        40
+        Block 40
 
         Block 41
 
-        Block 42
+        Block
+        42
 
         Block 43
 
         Block 44
 
-        Block
-        45
+        Block 45
 
-        Block 46
+        Block
+        46
 
         Block 47
 
@@ -504,9 +506,9 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
+      parentId: 1012
       parentUniqueId: Tests.dll/[Tests][TestScore][suite]
-    m_ResultText: 'TestScoreWhenDestroyAllBars (100,981s)
+    m_ResultText: 'TestScoreWhenDestroyAllBars (100,965s)
 
       ---
 
@@ -656,8 +658,8 @@ MonoBehaviour:
       uniqueId: '[TCC - Testes Automatizados][suite]'
       name: TCC - Testes Automatizados
       fullName: TCC - Testes Automatizados
-      resultStatus: 1
-      duration: 0.0623649
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -668,12 +670,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1011
+    - id: 1006
       uniqueId: '[EditMode][C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes Automatizados/Library/ScriptAssemblies/EditMode.dll][suite]'
       name: EditMode.dll
       fullName: C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes Automatizados/Library/ScriptAssemblies/EditMode.dll
-      resultStatus: 1
-      duration: 0.0492073
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -682,14 +684,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1005
+      parentId: 1000
       parentUniqueId: '[TCC - Testes Automatizados][suite]'
-    - id: 1006
+    - id: 1001
       uniqueId: EditMode.dll/[EditMode][TestNumberOfBars][suite]
       name: TestNumberOfBars
       fullName: TestNumberOfBars
-      resultStatus: 1
-      duration: 0.0468987
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -698,15 +700,15 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1011
+      parentId: 1006
       parentUniqueId: '[EditMode][C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes
         Automatizados/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1007
+    - id: 1002
       uniqueId: EditMode.dll/TestNumberOfBars/[EditMode][TestNumberOfBars.testNumberBarsSceneLevel1]
       name: testNumberBarsSceneLevel1
       fullName: TestNumberOfBars.testNumberBarsSceneLevel1
-      resultStatus: 1
-      duration: 0.0433248
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -716,14 +718,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1001
       parentUniqueId: EditMode.dll/[EditMode][TestNumberOfBars][suite]
-    - id: 1012
+    - id: 1007
       uniqueId: EditMode.dll/[EditMode][Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 0.1183618
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -732,15 +734,15 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1011
+      parentId: 1006
       parentUniqueId: '[EditMode][C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes
         Automatizados/Library/ScriptAssemblies/EditMode.dll][suite]'
-    - id: 1008
+    - id: 1003
       uniqueId: EditMode.dll/Tests/[EditMode][Tests.TestAddScore][suite]
       name: TestAddScore
       fullName: Tests.TestAddScore
-      resultStatus: 1
-      duration: 0.1170573
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -749,14 +751,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1012
+      parentId: 1007
       parentUniqueId: EditMode.dll/[EditMode][Tests][suite]
-    - id: 1010
+    - id: 1005
       uniqueId: EditMode.dll/Tests/TestAddScore/[EditMode][Tests.TestAddScore.testSortByNameWhenScoreEqual]
       name: testSortByNameWhenScoreEqual
       fullName: Tests.TestAddScore.testSortByNameWhenScoreEqual
-      resultStatus: 1
-      duration: 0.0658946
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -766,14 +768,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
+      parentId: 1003
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.TestAddScore][suite]
-    - id: 1009
+    - id: 1004
       uniqueId: EditMode.dll/Tests/TestAddScore/[EditMode][Tests.TestAddScore.testSortScore]
       name: testSortScore
       fullName: Tests.TestAddScore.testSortScore
-      resultStatus: 1
-      duration: 0.0405953
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -783,15 +785,15 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1008
+      parentId: 1003
       parentUniqueId: EditMode.dll/Tests/[EditMode][Tests.TestAddScore][suite]
-    m_ResultText: testNumberBarsSceneLevel1 (0,043s)
+    m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2abbead8
-      m_LastClickedID: -655705302
-      m_ExpandedIDs: 0871429d3cdc509e7cd01d6bbbaab26effffff7f
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 4f3b74850871429d3cdc509e7cd01d6bbbaab26effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -942,8 +944,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -100, y: -25.600006}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -100, y: -25.600006}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -953,9 +955,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: -175.79999}
+      snapOffset: {x: -141, y: 149}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 1
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -964,7 +966,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -1156,9 +1158,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.6392929, y: -0.3565102, z: 77.63423}
+    m_Target: {x: 193.46931, y: -38.100555, z: -4.855818}
     speed: 2
-    m_Value: {x: -0.6392929, y: -0.3565102, z: 77.63423}
+    m_Value: {x: 193.46931, y: -38.100555, z: -4.855818}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1209,9 +1211,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.957081
+    m_Target: 378.3577
     speed: 2
-    m_Value: 5.957081
+    m_Value: 378.3577
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1269,7 +1271,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 98eeffffb0eeffff94f3fffff4f5ffff0ef6ffff2cfbffff
+      m_ExpandedIDs: 3adaffff74daffffceddffff96e0ffffd0e0ffff6ae4ffff8ee8ffff9cedffffd6edffff62f0ffff42f1ffff22f4ffff5ef4ffffbcf7ffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1334,22 +1336,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/UI
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/UI
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\LUDUS\Documents\GitHub\TCC\TCC - Testes Automatizados
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b2610000
-    m_LastClickedID: 25010
-    m_ExpandedIDs: 00000000886100008a6100008c610000a661000000ca9a3b
+    m_SelectedIDs: ea610000
+    m_LastClickedID: 25066
+    m_ExpandedIDs: 00000000d4610000d6610000d861000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1377,7 +1379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000886100008a6100008c610000
+    m_ExpandedIDs: 00000000d4610000d6610000d8610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
