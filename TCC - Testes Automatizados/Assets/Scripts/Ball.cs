@@ -23,7 +23,7 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (start == false)
+        if (start == false && !Pause.instance.getIsPaused())
         {
             HorizontalMove();
             

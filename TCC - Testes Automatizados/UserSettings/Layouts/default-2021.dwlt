@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 141
+  controlID: 97
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 37
+  controlID: 98
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 347.19995
     height: 722.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -307,7 +307,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 150
+    ID: 2561
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
@@ -339,7 +339,7 @@ MonoBehaviour:
       name: TCC - Testes Automatizados
       fullName: TCC - Testes Automatizados
       resultStatus: 1
-      duration: 101.13371
+      duration: 7.2586713
       messages: 
       output: 
       stacktrace: 
@@ -355,7 +355,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/LUDUS/Documents/GitHub/TCC/TCC - Testes Automatizados/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 100.99217
+      duration: 7.1363935
       messages: 
       output: 
       stacktrace: 
@@ -371,7 +371,7 @@ MonoBehaviour:
       name: TestScore
       fullName: TestScore
       resultStatus: 1
-      duration: 100.97861
+      duration: 7.1282983
       messages: 
       output: 
       stacktrace: 
@@ -387,116 +387,14 @@ MonoBehaviour:
       name: TestScoreWhenDestroyAllBars
       fullName: TestScore.TestScoreWhenDestroyAllBars
       resultStatus: 1
-      duration: 100.96534
+      duration: 7.1165338
       messages: 
-      output: 'Block 1
+      output: 'Block 1X: -6Y: -0,7319404
 
-        Block 2
-
-        Block 3
-
-        Block 4
+        Block 2X: 0Y: -0,7319404
 
         Block
-        5
-
-        Block 6
-
-        Block 7
-
-        Block 8
-
-        Block 9
-
-        Block
-        10
-
-        Block 11
-
-        Block 12
-
-        Block 13
-
-        Block
-        14
-
-        Block 15
-
-        Block 16
-
-        Block 17
-
-        Block
-        18
-
-        Block 19
-
-        Block 20
-
-        Block 21
-
-        Block
-        22
-
-        Block 23
-
-        Block 24
-
-        Block 25
-
-        Block
-        26
-
-        Block 27
-
-        Block 28
-
-        Block 29
-
-        Block
-        30
-
-        Block 31
-
-        Block 32
-
-        Block 33
-
-        Block
-        34
-
-        Block 35
-
-        Block 36
-
-        Block 37
-
-        Block
-        38
-
-        Block 39
-
-        Block 40
-
-        Block 41
-
-        Block
-        42
-
-        Block 43
-
-        Block 44
-
-        Block 45
-
-        Block
-        46
-
-        Block 47
-
-        Block 48
-
-        Block 49
+        3X: 6Y: -0,7319404
 
 '
       stacktrace: 
@@ -508,117 +406,16 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1012
       parentUniqueId: Tests.dll/[Tests][TestScore][suite]
-    m_ResultText: 'TestScoreWhenDestroyAllBars (100,965s)
+    m_ResultText: 'TestScoreWhenDestroyAllBars (7,117s)
 
       ---
 
-      Block
-      1
+      Block 1X:
+      -6Y: -0,7319404
 
-      Block 2
+      Block 2X: 0Y: -0,7319404
 
-      Block 3
-
-      Block 4
-
-      Block 5
-
-      Block
-      6
-
-      Block 7
-
-      Block 8
-
-      Block 9
-
-      Block 10
-
-      Block
-      11
-
-      Block 12
-
-      Block 13
-
-      Block 14
-
-      Block 15
-
-      Block
-      16
-
-      Block 17
-
-      Block 18
-
-      Block 19
-
-      Block 20
-
-      Block
-      21
-
-      Block 22
-
-      Block 23
-
-      Block 24
-
-      Block 25
-
-      Block
-      26
-
-      Block 27
-
-      Block 28
-
-      Block 29
-
-      Block 30
-
-      Block
-      31
-
-      Block 32
-
-      Block 33
-
-      Block 34
-
-      Block 35
-
-      Block
-      36
-
-      Block 37
-
-      Block 38
-
-      Block 39
-
-      Block 40
-
-      Block
-      41
-
-      Block 42
-
-      Block 43
-
-      Block 44
-
-      Block 45
-
-      Block
-      46
-
-      Block 47
-
-      Block 48
-
-      Block 49'
+      Block 3X: 6Y: -0,7319404'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -1158,9 +955,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 193.46931, y: -38.100555, z: -4.855818}
+    m_Target: {x: 0.00000023841858, y: -0.73194045, z: 0}
     speed: 2
-    m_Value: {x: 193.46931, y: -38.100555, z: -4.855818}
+    m_Value: {x: 0.00000023841858, y: -0.73194045, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1211,9 +1008,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 378.3577
+    m_Target: 6.794835
     speed: 2
-    m_Value: 378.3577
+    m_Value: 6.794835
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1271,7 +1068,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3adaffff74daffffceddffff96e0ffffd0e0ffff6ae4ffff8ee8ffff9cedffffd6edffff62f0ffff42f1ffff22f4ffff5ef4ffffbcf7ffff2cfbffff
+      m_ExpandedIDs: 94ebffffceebffff5cedffff68eeffffa2eeffff34f0ffff12f7ffff0afaffff2cfbffffae630000ea630000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1336,22 +1133,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Tests/PlayMode
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Tests/PlayMode
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\LUDUS\Documents\GitHub\TCC\TCC - Testes Automatizados
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ea610000
-    m_LastClickedID: 25066
-    m_ExpandedIDs: 00000000d4610000d6610000d861000000ca9a3b
+    m_SelectedIDs: aa600000
+    m_LastClickedID: 24746
+    m_ExpandedIDs: 0000000070600000726000007460000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1379,7 +1176,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d4610000d6610000d8610000
+    m_ExpandedIDs: 00000000706000007260000074600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

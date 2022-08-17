@@ -36,7 +36,6 @@ public class TestScore
             x++;
             if (bar.tag == "Destructable")
             {
-                Debug.Log("Block " + x);
                 if (bar.GetBarPoints() == 10)
                     num = 1;
                 if (bar.GetBarPoints() == 30)
@@ -44,6 +43,7 @@ public class TestScore
                 else
                     num = 3;
                 
+                Debug.Log("Block " + x + "X: " + bar.transform.position.x + "Y: " + bar.transform.position.y);
                 for (int i = 0; i < num; i++)
                 {
                     ball.transform.position = new Vector2(bar.transform.position.x - 0.5f, player.transform.position.y);
@@ -57,6 +57,6 @@ public class TestScore
 
         Score score = GameObject.FindObjectOfType<Score>();
 
-        Assert.AreEqual(910, score.GetPlayerScore());
+        Assert.AreEqual(60, score.GetPlayerScore());
     }
 }
