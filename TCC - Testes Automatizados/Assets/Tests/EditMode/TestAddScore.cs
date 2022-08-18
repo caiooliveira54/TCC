@@ -20,10 +20,10 @@ namespace Tests
 
             addScore = new AddScore();
 
-            highScoreEntry1 = new HighScoreEntry { name = "NATH", round = 1, score = 1500 };
-            highScoreEntry2 = new HighScoreEntry { name = "JOAO", round = 2, score = 3000 };
-            highScoreEntry3 = new HighScoreEntry { name = "ANDR", round = 1, score = 1000 };
-            highScoreEntry4 = new HighScoreEntry { name = "ANDR", round = 1, score = 1500 };
+            highScoreEntry1 = new HighScoreEntry { name = "NATH", score = 1500 };
+            highScoreEntry2 = new HighScoreEntry { name = "JOAO", score = 3000 };
+            highScoreEntry3 = new HighScoreEntry { name = "ANDR", score = 1000 };
+            highScoreEntry4 = new HighScoreEntry { name = "ANDR", score = 1500 };
 
             highScores = new HighScores();
 

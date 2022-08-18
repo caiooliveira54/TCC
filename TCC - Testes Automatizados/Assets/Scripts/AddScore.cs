@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class AddScore 
 {
-    public void addHighScoreEntry(string name, int round, int score)
+    public void addHighScoreEntry(string name, int score)
     {
         HighScores highScores;
-        HighScoreEntry highScoreEntry = new HighScoreEntry { name = name, round = round, score = score };
+        HighScoreEntry highScoreEntry = new HighScoreEntry { name = name, score = score };
         
         string jsonString = PlayerPrefs.GetString("HighScoreTable");
         string json;
@@ -57,6 +57,5 @@ public class HighScores
 public class HighScoreEntry
 {
     public string name;
-    public int round;
     public int score;
 }
