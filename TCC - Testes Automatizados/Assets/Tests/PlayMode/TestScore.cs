@@ -30,26 +30,23 @@ public class TestScore
     public IEnumerator TestScoreWhenDestroyAllBars()
     {
         int num;
-        int x = 0;
         foreach (Bar bar in bars)
         {
-            x++;
             if (bar.tag == "Destructable")
             {
                 if (bar.GetBarPoints() == 10)
                     num = 1;
-                if (bar.GetBarPoints() == 30)
+                if (bar.GetBarPoints() == 20)
                     num = 2;
                 else
                     num = 3;
                 
-                Debug.Log("Block " + x + "X: " + bar.transform.position.x + "Y: " + bar.transform.position.y);
                 for (int i = 0; i < num; i++)
                 {
                     ball.transform.position = new Vector2(bar.transform.position.x - 0.5f, player.transform.position.y);
                     ball.BallMove();
 
-                    yield return new WaitForSeconds(0.75f);
+                    yield return new WaitForSeconds(0.5f);
                 } 
             }
             
