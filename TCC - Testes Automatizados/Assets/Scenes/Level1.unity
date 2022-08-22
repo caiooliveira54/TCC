@@ -3524,6 +3524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1804003376, guid: 59096c32eab66814e9cda942023397e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 290220098022694155, guid: 59096c32eab66814e9cda942023397e5, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3663,6 +3667,10 @@ PrefabInstance:
     - target: {fileID: 1958663630635645384, guid: 59096c32eab66814e9cda942023397e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168600834711662348, guid: 59096c32eab66814e9cda942023397e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59096c32eab66814e9cda942023397e5, type: 3}
